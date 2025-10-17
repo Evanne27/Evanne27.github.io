@@ -1,0 +1,351 @@
+
+body {
+    background-color: #A3BCF9;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-picture {
+    border-radius: 40px;
+    display: flex;
+    padding: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: #A3BCF9;
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.profile-picture > img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 40px;
+    transition: 1s ease;
+}
+
+.profile-picture:hover > img {
+    transform: scale(1.3);
+}
+
+@keyframes myAnimation {
+    0% {
+        background-color: #D1D2F9;
+    }
+
+    50% {
+        background-color: #38369A;
+    }
+
+    100% {
+        background-color: #D1D2F9;
+    }
+}
+
+.name {
+    color: white;
+    font-size: 90%;
+}
+
+.bbh-sans-bartle-regular {
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    top: 8em;
+    align-items: center;
+}
+
+ul li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+}
+
+ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+}
+
+ul li a:hover:before {
+    top: 0;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul li:nth-child(1) a:before {
+    background: #C13584;
+}
+
+ul li:nth-child(2) a:before {
+    background: #25D366;
+}
+
+ul li:nth-child(3) a:before {
+    background: #0077b5;
+}
+
+ul li:nth-child(4) a:before {
+    background: purple;
+}
+
+.cards1 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: right;
+}
+
+.cards1 .red {
+    background-color: purple;
+}
+
+.cards1 .blue {
+    background-color: #38369A;
+}
+
+.cards1 .green {
+    background-color: #D7B9D5;
+}
+
+.cards1 .card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 75px;
+    width: 150px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.cards1 .card1 p.tip {
+    font-size: 1em;
+    font-weight: 800px;
+}
+
+.cards1 .card1 p.second-text {
+    font-size: .7em;
+}
+
+.cards1 .card1:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.cards1:hover > .card1:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.cards .red {
+    background-color: purple;
+}
+
+.cards .blue {
+    background-color: #38369A;
+}
+
+.cards .green {
+    background-color: #D7B9D5;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 320px;
+    width: 220px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 800px;
+}
+
+.cards .card p.second-text {
+    font-size: .7em;
+}
+
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.fjalla-one-regular {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.phone{
+  display: none; 
+}
+.nophone{
+    display: flex;
+}
+
+@media only screen and  (max-width: 767px) {
+.features{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.phone{
+  display: initial; 
+}
+.nophone{
+  display: none;
+}
+    body {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+.llnk{
+    display: none;
+}
+
+.profile-picture img {
+    transform: none;
+    transition: none;
+}
+.cards1 .card1,
+.cards .card {
+    transform: none;
+    filter: none;
+    transition: none;
+}
+ul li a .icon {
+    transform: none;
+    transition: none;
+}
+ul li a:before {
+    top: 100%;
+    transition: none;
+}
+
+
+body .profile-picture:hover > img,
+body .cards1 .card1:hover,
+body .cards .card:hover,
+body ul li a:hover .icon,
+body ul li a:hover:before,
+body .cards:hover > .card:not(:hover),
+body .cards1:hover > .card1:not(:hover) {
+    transform: none;
+    filter: none;
+    transition: none;
+}
+}
